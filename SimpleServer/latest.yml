@@ -1,0 +1,9 @@
+version: 2.1.1
+files:
+  - url: CloudWorkerApp Setup 2.1.1.exe
+    sha512: Geu8oaOJ8KsKmHh+X42z93nA6/0K2qu7gwf8ABWaPV0MwYyP2S1Uu4WF1ool0R2qQpWvLEVJAj4vC9Hkr4MDOg==
+    size: 53519662
+    isAdminRightsRequired: true
+path: CloudWorkerApp Setup 2.1.1.exe
+sha512: Geu8oaOJ8KsKmHh+X42z93nA6/0K2qu7gwf8ABWaPV0MwYyP2S1Uu4WF1ool0R2qQpWvLEVJAj4vC9Hkr4MDOg==
+releaseDate: '2018-12-26T09:51:47.688Z'

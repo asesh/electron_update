@@ -1,0 +1,3 @@
+provider: generic
+url: 'http://127.0.0.1:8080/index.html?name=CloudWorkerHub&os=win&arch=x64&channel=latest&version=1.0.1/'
+updaterCacheDirName: cloudworkerhub-updater

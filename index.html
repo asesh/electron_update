@@ -2,18 +2,34 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>WorkStream Browser</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-
     <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
+      /*document.onkeypress = function(event) {
+        if(event.key === "Enter") {
+          alert('You pressed a key :)');
+        }
+      }*/
+
+      function on_button_clicked() {
+        var url = document.getElementById("url").value;
+        if(url != null) {
+          window.open(url, "_self")
+          // var main_div = document.getElementById("main");
+          // const web_view = document.createElement('webview');
+          // const finished_loading = ()=> {
+          //   document.body.appendChild(web_view)
+          // };
+          // web_view.addEventListener('did-finish-load', finished_loading);
+          // web_view.src = url;
+        }
+      }
     </script>
+
+    <div id="main">
+      <input type="text" id="url" >
+      <button type="button" onclick="on_button_clicked()">Click Me</button>
+    </div>
   </body>
 </html>

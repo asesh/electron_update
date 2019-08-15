@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>WorkStream Browser</title>
+  </head>
+  <body>
+    <script>
+      function on_button_clicked() {
+        var url = document.getElementById("url").value;
+        if(url != null) {
+          var main_div = document.getElementById("main");
+          const web_view = document.createElement('webview');
+          const finished_loading = ()=> {
+            //main_div.innerHTML = web_view.innerHTML;
+          };
+          web_view.addEventListener('did-finish-load', finished_loading);
+          web_view.src = url;
+        }
+      }
+    </script>
+  </body>
+</html>
